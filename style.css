@@ -1,0 +1,60 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#94a3b8;
+  --text:#e6eef6;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg,#051024 0%, #08132a 100%);
+  color:var(--text);
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+.card{
+  width:100%;
+  max-width:600px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:12px;
+  padding:1.6rem;
+  box-shadow:0 8px 30px rgba(2,6,23,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+h1{margin:0 0 1rem 0; font-size:1.4rem}
+label{display:block; font-size:0.9rem; color:var(--muted); margin-bottom:0.35rem}
+input[type="email"]{
+  width:100%;
+  padding:0.8rem;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  font-size:1rem;
+  background:#071024;
+  color:var(--text);
+  margin-bottom:0.8rem;
+}
+
+.controls{display:flex; gap:0.5rem; margin-bottom:1rem}
+button{
+  padding:0.6rem 0.9rem;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  background:var(--accent);
+  color:#012025;
+}
+button[type="button"]{background:#0ea5a4}
+.result{background:#021021; padding:1rem; border-radius:8px; margin-top:0.5rem; border:1px solid rgba(255,255,255,0.02)}
+.hidden{display:none}
+pre{white-space:pre-wrap; word-wrap:break-word; margin:0; color:var(--text)}
+.note{font-size:0.85rem; color:var(--muted); margin-top:0.8rem}
